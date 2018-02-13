@@ -1,0 +1,21 @@
+PODS:
+  - AMPopTip (3.1.3)
+  - EasyAnimation (2.0.2)
+  - Hero (1.1.0)
+  - Pulsator (0.4.1)
+
+DEPENDENCIES:
+  - AMPopTip
+  - EasyAnimation
+  - Hero
+  - Pulsator
+
+SPEC CHECKSUMS:
+  AMPopTip: 0eba2f6fe939ca06f1ba5c5db1f0d0d10f4a758a
+  EasyAnimation: 977ef673efe8ce62447807eedb380a77b189dc80
+  Hero: ce59e81c79390613d97b43da7179e2c5e1017e04
+  Pulsator: 89a18d0e0ee2f642bb83cb9dfb6b7eebc1dc6241
+
+PODFILE CHECKSUM: d4018811776e955e600266fe07c5b75c91dbc35d
+
+COCOAPODS: 1.4.0

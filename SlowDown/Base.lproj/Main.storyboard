@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ships In The Night (Bold).ttf">
+            <string>ShipsInTheNightBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="initialVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="ViewController" customModule="SlowDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="rotate your device to begin" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72Y-Ze-tVS">
+                                <rect key="frame" x="66.5" y="330" width="534" height="45"/>
+                                <fontDescription key="fontDescription" name="ShipsInTheNightBold" family="Ships In The Night (Bold)" pointSize="45"/>
+                                <color key="textColor" red="0.96862745098039216" green="0.84313725490196079" blue="0.58039215686274503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tilt" translatesAutoresizingMaskIntoConstraints="NO" id="rkJ-nK-WWN">
+                                <rect key="frame" x="133.5" y="6" width="400" height="400.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="rkJ-nK-WWN" secondAttribute="height" multiplier="1:1" id="gwH-iI-bTJ"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comma" translatesAutoresizingMaskIntoConstraints="NO" id="dRi-1x-Aik">
+                                <rect key="frame" x="333" y="5" width="1" height="1"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="XaI-cJ-c0g"/>
+                                    <constraint firstAttribute="width" secondItem="dRi-1x-Aik" secondAttribute="height" multiplier="1:1" id="sve-4L-Plg"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="crt-fh-AjJ" appends="YES" id="oJ3-lU-rdV"/>
+                                </connections>
+                            </imageView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fMQ-Pv-JtV">
+                                <rect key="frame" x="49" y="162" width="277" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="15s"/>
+                                    <segment title="30s"/>
+                                    <segment title="45s"/>
+                                    <segment title="60s"/>
+                                </segments>
+                                <color key="tintColor" red="0.96816176180000002" green="0.84239810709999996" blue="0.58045613770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nav-4W-Ke9">
+                                <rect key="frame" x="0.0" y="6" width="667" height="0.0"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="...do you have a minute?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n0f-YU-WT6">
+                                        <rect key="frame" x="0.0" y="-17.5" width="667" height="35"/>
+                                        <fontDescription key="fontDescription" name="ShipsInTheNightBold" family="Ships In The Night (Bold)" pointSize="35"/>
+                                        <color key="textColor" red="0.96862745100000003" green="0.84313725490000002" blue="0.58039215690000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="title"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="n0f-YU-WT6" firstAttribute="centerY" secondItem="nav-4W-Ke9" secondAttribute="centerY" id="1Ue-OW-ofc"/>
+                                    <constraint firstItem="n0f-YU-WT6" firstAttribute="width" secondItem="nav-4W-Ke9" secondAttribute="width" id="JJo-1F-uNV"/>
+                                    <constraint firstItem="n0f-YU-WT6" firstAttribute="centerX" secondItem="nav-4W-Ke9" secondAttribute="centerX" id="TpG-fs-zje"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95545142890000001" green="0.65150052309999995" blue="0.51321655509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rkJ-nK-WWN" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6U5-eB-vM8"/>
+                            <constraint firstItem="dRi-1x-Aik" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="6YE-MK-l1J"/>
+                            <constraint firstItem="dRi-1x-Aik" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="7Ky-Ql-rme"/>
+                            <constraint firstItem="rkJ-nK-WWN" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.6" id="AA3-xv-RCz"/>
+                            <constraint firstItem="72Y-Ze-tVS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ib2-ry-IYp"/>
+                            <constraint firstItem="rkJ-nK-WWN" firstAttribute="top" secondItem="nav-4W-Ke9" secondAttribute="bottom" id="Ihf-45-LDg"/>
+                            <constraint firstItem="nav-4W-Ke9" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="UNf-Ma-1X9"/>
+                            <constraint firstItem="nav-4W-Ke9" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="WXl-GP-Rhm"/>
+                            <constraint firstItem="rkJ-nK-WWN" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="1.1" id="Yfv-AS-w6h"/>
+                            <constraint firstItem="nav-4W-Ke9" firstAttribute="top" secondItem="dRi-1x-Aik" secondAttribute="bottom" id="dyz-je-4xd"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="72Y-Ze-tVS" secondAttribute="bottom" priority="750" id="fWD-oH-jS3"/>
+                            <constraint firstItem="72Y-Ze-tVS" firstAttribute="top" relation="lessThanOrEqual" secondItem="rkJ-nK-WWN" secondAttribute="bottom" constant="25" id="fe7-O9-SQL"/>
+                            <constraint firstItem="72Y-Ze-tVS" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="zZr-fY-G6a"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="background"/>
+                        </userDefinedRuntimeAttributes>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="fMQ-Pv-JtV"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="commaImage" destination="dRi-1x-Aik" id="yM7-aN-sJS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="crt-fh-AjJ">
+                    <connections>
+                        <outlet property="delegate" destination="BYZ-38-t0r" id="ztn-6a-3yc"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="37.600000000000001" y="33.733133433283363"/>
+        </scene>
+        <!--Timer View Controller-->
+        <scene sceneID="W0i-mf-xze">
+            <objects>
+                <viewController storyboardIdentifier="timerVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="jHl-aY-jQx" customClass="TimerViewController" customModule="SlowDown" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2Fo-Zd-dk6">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="01:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJZ-Mw-oF5">
+                                <rect key="frame" x="284.5" y="188" width="98.5" height="75"/>
+                                <fontDescription key="fontDescription" name="ShipsInTheNightBold" family="Ships In The Night (Bold)" pointSize="45"/>
+                                <color key="textColor" red="0.96816176180000002" green="0.84239810709999996" blue="0.58045613770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="comma" translatesAutoresizingMaskIntoConstraints="NO" id="Sel-7t-bwb" userLabel="Comma Image">
+                                <rect key="frame" x="310.5" y="5" width="45" height="45"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="45" id="Csc-r7-adt"/>
+                                    <constraint firstAttribute="width" secondItem="Sel-7t-bwb" secondAttribute="height" multiplier="1:1" id="bPV-g6-AlN"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerprint" translatesAutoresizingMaskIntoConstraints="NO" id="7aF-3N-sQ8" userLabel="left_fingerprint">
+                                <rect key="frame" x="60" y="151.5" width="147" height="147"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7aF-3N-sQ8" secondAttribute="height" multiplier="1:1" id="Eol-gz-r6h"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fingerprint" translatesAutoresizingMaskIntoConstraints="NO" id="0TS-mE-IfM" userLabel="right_ fingerprint">
+                                <rect key="frame" x="460" y="151.5" width="147" height="147"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="0TS-mE-IfM" secondAttribute="height" multiplier="1:1" id="xDc-P6-cUO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="put your thumbs on the marks" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvt-3o-GJL">
+                                <rect key="frame" x="133.5" y="50" width="400" height="119"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="119" id="EGj-Cw-MRV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="ShipsInTheNightBold" family="Ships In The Night (Bold)" pointSize="45"/>
+                                <color key="textColor" red="0.96816176180000002" green="0.84239810709999996" blue="0.58045613770000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="title"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <view opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZrE-Zj-00Q">
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.95545142890000001" green="0.65150052309999995" blue="0.51321655509999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cJZ-Mw-oF5" firstAttribute="centerY" secondItem="7aF-3N-sQ8" secondAttribute="centerY" id="3SE-in-ZXV"/>
+                            <constraint firstItem="lvt-3o-GJL" firstAttribute="centerX" secondItem="yis-LF-GRH" secondAttribute="centerX" id="5Bq-SU-2yl"/>
+                            <constraint firstItem="7aF-3N-sQ8" firstAttribute="centerY" secondItem="yis-LF-GRH" secondAttribute="centerY" multiplier="1.2" id="5nr-Iz-D92"/>
+                            <constraint firstItem="cJZ-Mw-oF5" firstAttribute="height" secondItem="2Fo-Zd-dk6" secondAttribute="height" multiplier="0.2" id="Bue-zl-dWM"/>
+                            <constraint firstItem="ZrE-Zj-00Q" firstAttribute="height" secondItem="yis-LF-GRH" secondAttribute="height" id="DJj-Ec-3nM"/>
+                            <constraint firstItem="0TS-mE-IfM" firstAttribute="centerX" secondItem="yis-LF-GRH" secondAttribute="centerX" multiplier="1.6" id="FXc-Av-zVY"/>
+                            <constraint firstItem="0TS-mE-IfM" firstAttribute="centerY" secondItem="yis-LF-GRH" secondAttribute="centerY" multiplier="1.2" id="GUo-fJ-I6J"/>
+                            <constraint firstItem="ZrE-Zj-00Q" firstAttribute="centerY" secondItem="yis-LF-GRH" secondAttribute="centerY" id="Htu-gH-SqD"/>
+                            <constraint firstItem="ZrE-Zj-00Q" firstAttribute="centerX" secondItem="yis-LF-GRH" secondAttribute="centerX" id="MKX-7z-DQC"/>
+                            <constraint firstItem="Sel-7t-bwb" firstAttribute="top" secondItem="ZrE-Zj-00Q" secondAttribute="top" constant="5" id="Mhm-Im-edn"/>
+                            <constraint firstItem="ZrE-Zj-00Q" firstAttribute="width" secondItem="yis-LF-GRH" secondAttribute="width" id="Ppt-hJ-Ddy"/>
+                            <constraint firstItem="7aF-3N-sQ8" firstAttribute="centerX" secondItem="yis-LF-GRH" secondAttribute="centerX" multiplier="0.4" id="eHX-wT-fHM"/>
+                            <constraint firstItem="lvt-3o-GJL" firstAttribute="width" secondItem="2Fo-Zd-dk6" secondAttribute="width" multiplier="0.6" id="efs-bY-dh2"/>
+                            <constraint firstItem="Sel-7t-bwb" firstAttribute="centerX" secondItem="ZrE-Zj-00Q" secondAttribute="centerX" id="fYQ-VD-4yk"/>
+                            <constraint firstItem="0TS-mE-IfM" firstAttribute="width" secondItem="yis-LF-GRH" secondAttribute="width" multiplier="0.22" id="nXO-lE-6w8"/>
+                            <constraint firstItem="lvt-3o-GJL" firstAttribute="top" secondItem="Sel-7t-bwb" secondAttribute="bottom" id="sEB-JX-loG"/>
+                            <constraint firstItem="cJZ-Mw-oF5" firstAttribute="centerX" secondItem="yis-LF-GRH" secondAttribute="centerX" id="tga-X9-Zp6"/>
+                            <constraint firstItem="7aF-3N-sQ8" firstAttribute="width" secondItem="yis-LF-GRH" secondAttribute="width" multiplier="0.22" id="vLm-kM-0tI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yis-LF-GRH"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="string" keyPath="heroID" value="background"/>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <connections>
+                        <outlet property="commaImage" destination="Sel-7t-bwb" id="Krg-xg-XvR"/>
+                        <outlet property="leftFingerprint" destination="7aF-3N-sQ8" id="sRA-Hz-IlA"/>
+                        <outlet property="messageLabel" destination="lvt-3o-GJL" id="wYy-en-5yA"/>
+                        <outlet property="rightFingerprint" destination="0TS-mE-IfM" id="GoV-EN-3G6"/>
+                        <outlet property="timerLabel" destination="cJZ-Mw-oF5" id="0bm-Sf-9Do"/>
+                        <outlet property="touchView" destination="ZrE-Zj-00Q" id="cLE-7A-rRx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fL6-iv-Tfo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="830.73463268365822" y="32.799999999999997"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="comma" width="600" height="600"/>
+        <image name="fingerprint" width="2540" height="2980"/>
+        <image name="tilt" width="1050" height="1050"/>
+    </resources>
+</document>
